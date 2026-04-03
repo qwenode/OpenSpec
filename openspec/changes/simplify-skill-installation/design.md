@@ -9,7 +9,7 @@ Current architecture:
 - `src/core/templates/workflows/*.ts` - Individual workflow templates
 - `src/prompts/searchable-multi-select.ts` - Tool selection UI
 
-Global config exists at `~/.config/openspec/config.json` for telemetry/feature flags. Profile/delivery settings will extend this existing config.
+Global config exists at `~/.config/openspec/config.json` for feature flags. Profile/delivery settings will extend this existing config.
 
 ## Goals / Non-Goals
 
@@ -40,7 +40,6 @@ Add profile/delivery settings to existing `~/.config/openspec/config.json` (via 
 **Schema extension:**
 ```json
 {
-  "telemetry": { ... },     // existing
   "featureFlags": { ... },  // existing
   "profile": "core",        // NEW
   "delivery": "both",       // NEW

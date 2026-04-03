@@ -83,7 +83,6 @@ _Outcome:_ OpenSpec graduates from replace-based updates to a resilient, intent-
 - **CLI UX:** new commands (`change sync`, enhanced `archive`) require documentation, help text, and release notes.
 - **Docs & AGENTS updates:** reinforce the rebase workflow and explain conflict resolution to AI assistants.
 - **Testing:** introduce fixtures covering divergent requirement fingerprints and merge resolution logic.
-- **Telemetry (optional):** log fingerprint mismatches so we can see how often teams hit conflicts after the rollout.
 
 ## Open Questions / Risks
 - How should we order scenarios when multiple changes insert at different points? (Consider optional `position` metadata or deterministic alphabetical fallbacks.)

@@ -88,7 +88,7 @@ The system SHALL provide an interactive picker for configuring profiles.
 - **THEN** the system SHALL exit with code 1
 
 ### Requirement: Profile settings stored in global config
-Profile and delivery settings SHALL be stored in the existing global config file (`~/.config/openspec/config.json`) alongside telemetry and feature flags.
+Profile and delivery settings SHALL be stored in the existing global config file (`~/.config/openspec/config.json`) alongside feature flags.
 
 #### Scenario: Config schema
 - **WHEN** reading profile configuration
@@ -97,7 +97,7 @@ Profile and delivery settings SHALL be stored in the existing global config file
 #### Scenario: Schema evolution
 - **WHEN** loading config without profile/delivery fields
 - **THEN** the system SHALL use defaults (profile=core, delivery=both)
-- **AND** existing config fields (telemetry, featureFlags) SHALL be preserved
+- **AND** existing config fields (featureFlags) SHALL be preserved
 
 #### Scenario: Config list displays profile settings
 - **WHEN** user runs `openspec config list`

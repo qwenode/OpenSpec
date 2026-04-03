@@ -186,7 +186,6 @@ After migration, subsequent `init` and `update` commands respect the migrated co
 ```json
 // ~/.config/openspec/config.json (extends existing)
 {
-  "telemetry": { ... },          // existing
   "featureFlags": { ... },       // existing
   "profile": "core",             // NEW: core | custom
   "delivery": "both",            // NEW: both | skills | commands
